@@ -24,8 +24,6 @@
 </template>
 
 <script setup lang="ts">
-
-const name = "main-layout";
 </script>
 
 <style scoped>

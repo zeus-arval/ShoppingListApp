@@ -1,5 +1,5 @@
 export interface IShoppingItem{
-    id: string,
+    id?: string,
     description?: string,
     completed: boolean,
 }

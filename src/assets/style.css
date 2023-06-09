@@ -1,20 +1,26 @@
 body{
     margin: 0;
+    color: darkslategray;
 }
 
 a {
     display: flex;
     cursor: pointer;
+}
+
+.small-icon-button {
+    display: flex;
+    cursor: pointer;
     transition: border 300ms, border-radius 500ms, background 300ms, padding 300ms;
 }
 
-a:hover{
+.small-icon-button:hover {
     padding: 2px;
     border-radius: 0.2em;
     border: solid 2px grey;
 }
 
-a:active{
+.small-icon-button:active {
     padding: 2px;
     border: solid 2px grey;
     background: grey;
@@ -39,6 +45,12 @@ tr {
     margin-top: 4em;
     display: flex;
     justify-content: center;
+}
+
+.form-description{
+    display: flex;
+    justify-content: center;
+    column-gap: 3em;
 }
 
 .navigation-items-container{
@@ -95,6 +107,7 @@ tr {
 
 .shopping-list-title{
     margin-left: 1em;
+    color: darkslategray;
 }
 
 .shopping-item-container{
@@ -136,7 +149,7 @@ tr {
 .shopping-list-header{
     display: flex;
     flex-direction: row;
-    column-gap: 50%;
+    column-gap: 7%;
     align-items: center;
 }
 
@@ -150,6 +163,7 @@ tr {
     border: transparent;
     background: lightgrey;
     transition: background-color 300ms, color 400ms;
+    color: darkslategray;
 }
 
 .rounded-button:hover{
@@ -160,4 +174,36 @@ tr {
 .rounded-button:active{
     background: darkslategrey;
     color: white;
+}
+
+.input-description{
+    width: 30em;
+    height: 80%;
+    font-size: 18px;
+}
+
+.description-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.error-message-container{
+    margin-left: 17em;
+}
+
+.change-item-description-input{
+    width: 60em;
+    font-size: 19px;
+    border: transparent;
+}
+
+.submit-description{
+    border: transparent;
+    width: 2em;
+    height: 2em;
+    background: transparent;
+}
+
+.icon-button{
+    transform: scale(1.5);
 }
