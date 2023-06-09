@@ -2,6 +2,24 @@ body{
     margin: 0;
 }
 
+a {
+    display: flex;
+    cursor: pointer;
+    transition: border 300ms, border-radius 500ms, background 300ms, padding 300ms;
+}
+
+a:hover{
+    padding: 2px;
+    border-radius: 0.2em;
+    border: solid 2px grey;
+}
+
+a:active{
+    padding: 2px;
+    border: solid 2px grey;
+    background: grey;
+}
+
 img{
     width: 1.2em;
     height: 1.2em;
@@ -27,6 +45,7 @@ tr {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%
 }
 
 .nav-project-name-container{
@@ -68,23 +87,77 @@ tr {
 .list-row-shopping-item{
     width: 90%;
     height: auto;
-    padding: 2em;
+    padding: 0.4em;
     background: lightsteelblue;
     border-radius: 0.5em;
     margin: 1em;
 }
 
+.shopping-list-title{
+    margin-left: 1em;
+}
+
 .shopping-item-container{
     display: flex;
     flex-direction: column;
+    row-gap: 1em;
+    margin: 0.2em;
 }
 
 .button-change-shopping-item{
     background-image: url("images/change-item-icon.png");
 }
 
-.shopping-item-top{
+.shopping-item-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 1.3em;
+}
+
+.shopping-list-buttons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.5em;
+    align-items: center;
+}
+
+.square-checkbox{
+    transform: scale(1.9);
+    margin: 0;
+}
+
+.shopping-list-header{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50%;
+    align-items: center;
+}
+
+.rounded-button{
+    border-radius: 0.5em;
+    padding: 1em 2em 1em 2em;
+    font-size: 20px;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    border: transparent;
+    background: lightgrey;
+    transition: background-color 300ms, color 400ms;
+}
+
+.rounded-button:hover{
+    background: grey;
+    color: white;
+}
+
+.rounded-button:active{
+    background: darkslategrey;
+    color: white;
 }
